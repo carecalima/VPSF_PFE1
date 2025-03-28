@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="css/home.css">
+    <style>
+        /* Estilo adicional para a tabela */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        .actions button {
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+
+        .actions button:hover {
+            background-color: #555;
+        }
+
+        .add-product {
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-product:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Clientes</h1>
+    </header>
+    <main>
+        <button class="add-product" onclick="window.location.href='cadastrar.html'">Cadastrar Novo Produto</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Valor Final</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Produto 1</td>
+                    <td>Descrição do Produto 1</td>
+                    <td>R$ 100,00</td>
+                    <td class="actions">
+                        <button>Editar</button>
+                        <button>Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Produto 2</td>
+                    <td>Descrição do Produto 2</td>
+                    <td>R$ 200,00</td>
+                    <td class="actions">
+                        <button>Editar</button>
+                        <button>Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>Desenvolvido por Pedro Lima.</p>
+    </footer>
+</body>
+</html>
